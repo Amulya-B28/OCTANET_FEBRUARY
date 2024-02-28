@@ -21,15 +21,16 @@ body {
 .todo-list .todo-list__title {
   color: #f1faee;
   font-size: 25px;
+  margin: 30px 0;
   position: relative;
   top: 25px;
-  left: 70px;
+  left: 55px;
 
 }
 .todo-list .todo-list__label {
   display: flex;
   align-items: center;
-  margin: 40px 0;
+  margin: 30px 0;
   font-size: 15px;
   font-family: Lato, sans-serif;
   color: #f1faee;
@@ -74,9 +75,21 @@ body {
   transition: transform 0.5s;
 }
 .todo-list .todo-list__label input[type=checkbox]:checked ~ span {
-  color: #585b57;
+  color: #000000;
 }
 .todo-list .todo-list__label input[type=checkbox]:checked ~ span::before {
   transform: scaleX(1);
   transform-origin: left;
+}
+#thumb1{
+  left: 0px;
+  position: absolute;
+  transform: scale(0.3);
+  border-radius: 80%;
+
+}
+#thumb2{
+  right: 0px;
+  position: absolute;
+  transform: scale(0.3);
 }
